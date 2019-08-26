@@ -70,6 +70,13 @@
 			info = [ "coldbox.system" ]
 		};
 
+		moduleSettings = {
+			cbCodeFormat = {
+				theme = "monokai",
+				preRenderer = true
+			}
+		};
+
 	}
 
 	/**

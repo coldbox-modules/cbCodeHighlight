@@ -29,7 +29,7 @@ component {
 			// Themes: autumn,borland,bw,colorful,default,emacs,friendly,fruity,manny,monokai,murphy,native,pastie,perldoc,tango,trac,vim,vs
 			theme = "default",
 			// Listen to `preRender()` and convert any `<pre></pre>` tags to syntax highlighting
-			preRenderer = true
+			preRenderer = false
 		};
 
 		// Custom Declared Interceptors
