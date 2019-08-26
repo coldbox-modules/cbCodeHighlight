@@ -14,4 +14,4 @@ test-harness/modules/**
 logs/**
 
 # Libs
-#lib/**
+lib/**
