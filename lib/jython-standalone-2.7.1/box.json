@@ -1,0 +1,7 @@
+{
+    "location":"jar:https://search.maven.org/remotecontent?filepath=org/python/jython-standalone/2.7.1/jython-standalone-2.7.1.jar",
+    "name":"jython-standalone-2.7.1.jar",
+    "slug":"jython-standalone-2.7.1",
+    "type":"jars",
+    "version":"0.0.0"
+}

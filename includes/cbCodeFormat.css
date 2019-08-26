@@ -1,0 +1,18 @@
+.highlight {
+	padding: 5px 5px;
+	margin: 20px 0px;
+}
+.highlight pre {
+	margin-top: 5px;
+}
+.highlight .filename {
+	width: 100%;
+	background: transparent;
+	margin: -9px -9px 0;
+	padding: 10px;
+	color: #969696;
+}
+.highlight span.err {
+	border: none;
+	background: transparent;
+}
