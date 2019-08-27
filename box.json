@@ -1,6 +1,6 @@
 {
     "name":"cbCodeFormat",
-    "version":"1.6.0",
+    "version":"1.7.0",
     "location":"https://downloads.ortussolutions.com/ortussolutions/coldbox-modules/cbCodeFormat/@build.version@/cbCodeFormat-@build.version@.zip",
     "author":"Ortus Solutions, Corp",
     "homepage":"https://github.com/ortus-solutions/cbCodeFormat",
