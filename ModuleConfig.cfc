@@ -28,6 +28,8 @@ component {
 			// The code theme to activate
 			// Themes: autumn,borland,bw,colorful,default,emacs,friendly,fruity,manny,monokai,murphy,native,pastie,perldoc,tango,trac,vim,vs
 			theme = "default",
+			// Default language
+			defaultLexer = "java",
 			// Listen to `preRender()` and convert any `<pre></pre>` tags to syntax highlighting
 			preRenderer = false
 		};

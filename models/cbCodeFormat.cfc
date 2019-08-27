@@ -56,12 +56,12 @@ component accessors='true' singleton {
 	 * Take a string and format it as HTML
 	 *
 	 * @code The code block to format
-	 * @syntax The syntax to apply
+	 * @syntax The syntax to apply, if not passed it defaults to the defaultLexer setting
 	 * @fileName The filename + extension this code syntax represents
 	 */
 	function format(
 		required string code,
-		required string syntax,
+		string syntax=variables.settings.defaultLexer,
 		string fileName = ''
 	) {
 		getInterpreter().set( 'code', arguments.code );
