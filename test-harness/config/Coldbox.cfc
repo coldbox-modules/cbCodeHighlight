@@ -71,7 +71,7 @@
 		};
 
 		moduleSettings = {
-			cbCodeFormat = {
+			cbCodeHighlight = {
 				theme = "monokai",
 				preRenderer = true
 			}

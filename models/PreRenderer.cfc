@@ -4,8 +4,8 @@
 component singleton{
 
 	// DI
-	property name="cbCodeFormat" 	inject="cbCodeFormat@cbCodeFormat";
-	property name="settings" 		inject="coldbox:moduleSettings:cbCodeFormat";
+	property name="cbCodeHighlight" 	inject="cbCodeHighlight@cbCodeHighlight";
+	property name="settings" 			inject="coldbox:moduleSettings:cbCodeHighlight";
 
 	/**
 	 * Constructor
@@ -42,7 +42,7 @@ component singleton{
 				multiStringReplace(
 					builder 	= builder,
 					indexOf	 	= codeGroup,
-					replaceWith = variables.cbCodeFormat.format(
+					replaceWith = variables.cbCodeHighlight.format(
 						code 		: trim( codeBlockXml.pre.xmlText ),
 						syntax 		: tagAttributes.syntax ?: variables.settings.defaultLexer,
 						fileName 	: tagAttributes.fileName ?: ""

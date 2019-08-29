@@ -1,17 +1,17 @@
 {
-    "name":"cbCodeFormat",
-    "version":"1.7.0",
-    "location":"https://downloads.ortussolutions.com/ortussolutions/coldbox-modules/cbCodeFormat/@build.version@/cbCodeFormat-@build.version@.zip",
+    "name":"cbCodeHighlight",
+    "version":"1.0.0",
+    "location":"https://downloads.ortussolutions.com/ortussolutions/coldbox-modules/cbCodeHighlight/@build.version@/cbCodeHighlight-@build.version@.zip",
     "author":"Ortus Solutions, Corp",
-    "homepage":"https://github.com/ortus-solutions/cbCodeFormat",
-    "documentation":"https://github.com/ortus-solutions/cbCodeFormat",
+    "homepage":"https://github.com/ortus-solutions/cbCodeHighlight",
+    "documentation":"https://github.com/ortus-solutions/cbCodeHighlight",
     "repository":{
         "type":"git",
-        "url":"https://github.com/ortus-solutions/cbCodeFormat"
+        "url":"https://github.com/ortus-solutions/cbCodeHighlight"
     },
-    "bugs":"https://github.com/ortus-solutions/cbCodeFormat/issues",
+    "bugs":"https://github.com/ortus-solutions/cbCodeHighlight/issues",
     "shortDescription":"A module that allows you to do code formatting/highlighting based on Pygments",
-    "slug":"cbCodeFormat",
+    "slug":"cbCodeHighlight",
     "type":"modules",
     "keywords":"code formatting, syntax highlighting, pygments",
     "license":[

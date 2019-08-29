@@ -9,8 +9,8 @@ component accessors='true' singleton {
 	// DI
 	property name="wirebox" 	inject="wirebox";
 	property name="jLoader" 	inject="loader@cbjavaloader";
-	property name="settings" 	inject="coldbox:moduleSettings:cbCodeFormat";
-	property name="config" 		inject="coldbox:moduleConfig:cbCodeFormat";
+	property name="settings" 	inject="coldbox:moduleSettings:cbCodeHighlight";
+	property name="config" 		inject="coldbox:moduleConfig:cbCodeHighlight";
 
 	/**
 	 * Constructor
@@ -40,7 +40,7 @@ component accessors='true' singleton {
 	 * Retrieve the include path for the core css
 	 */
 	function getCoreCSSPath(){
-		return variables.config.mapping & "/includes/cbCodeFormat.css";
+		return variables.config.mapping & "/includes/cbCodeHighlight.css";
 	}
 
 	/**

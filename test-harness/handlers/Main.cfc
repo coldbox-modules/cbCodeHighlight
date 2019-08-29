@@ -4,7 +4,7 @@
 	* Executes before all handler actions
 	*/
 	any function preHandler( event, rc, prc, action, eventArguments ){
-		addAsset( getInstance( "cbCodeFormat@cbCodeFormat" ).getCssAssets() );
+		addAsset( getInstance( "cbCodeHighlight@cbCodeHighlight" ).getCssAssets() );
 	}
 
 
@@ -16,7 +16,7 @@
 	* code
 	*/
 	function code( event, rc, prc ){
-		return getInstance( "cbCodeFormat@cbCodeFormat" )
+		return getInstance( "cbCodeHighlight@cbCodeHighlight" )
 			.format(
 				code = "SELECT * FROM Users where id = ?",
 				syntax="sql",
