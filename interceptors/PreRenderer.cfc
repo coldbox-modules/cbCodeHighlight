@@ -4,7 +4,7 @@
 component extends="coldbox.system.interceptor"{
 
 	// DI
-	property name="renderer" inject="PreRenderer@cbCodeFormat";
+	property name="renderer" inject="PreRenderer@cbCodeHighlight";
 
 	/**
 	 * Configure interceptor

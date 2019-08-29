@@ -7,14 +7,14 @@
 component {
 
 	// Module Properties
-	this.title 				= "cbCodeFormat";
+	this.title 				= "cbCodeHighlight";
 	this.author 			= "Ortus Solutions";
 	this.webURL 			= "https://www.ortussolutions.com";
 	this.description 		= "Code Formatting and Syntax Highlighter";
 	// Model Namespace
-	this.modelNamespace		= "cbCodeFormat";
+	this.modelNamespace		= "cbCodeHighlight";
 	// CF Mapping
-	this.cfmapping			= "cbCodeFormat";
+	this.cfmapping			= "cbCodeHighlight";
 	// Dependencies
 	this.dependencies 		= [ "cbjavaloader" ];
 
@@ -53,7 +53,7 @@ component {
 			controller.getInterceptorService()
 				.registerInterceptor(
 					interceptorClass 	= "#moduleMapping#.interceptors.PreRenderer",
-					interceptorName 	= "TagRenderer@cbCodeFormat"
+					interceptorName 	= "TagRenderer@cbCodeHighlight"
 				);
 		}
 	}

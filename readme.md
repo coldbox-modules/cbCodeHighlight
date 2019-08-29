@@ -4,7 +4,7 @@ This module allows you to do code formatting and syntax highlighting according t
 
 ## Installation
 
-Just run a simple `box install cbCodeFormat` with CommandBox CLI!
+Just run a simple `box install cbCodeHighlight` with CommandBox CLI!
 
 ## Settings
 
@@ -12,7 +12,7 @@ You can add the following settings to your `config/ColdBox.cfc` under the `modul
 
 ```js
 moduleSettings = {
-	cbCodeFormat = {
+	cbCodeHighlight = {
 		// The code theme to activate
 		// Themes: autumn,borland,bw,colorful,default,emacs,friendly,fruity,manny,monokai,murphy,native,pastie,perldoc,tango,trac,vim,vs
 		theme = "default",
@@ -32,12 +32,12 @@ moduleSettings = {
 
 This module comes with two model classes to help you with code formatting and highlighting. Below are the WireBox Id's you can use:
 
-* `cbCodeFormat@cbCodeFormat` : Render out formatting using a code block and options.
-* `preRenderer@cbCodeFormat` : Process an HTML block and replace all `<pre></pre>` tags with the appropriate syntax highlight.
+* `cbCodeHighlight@cbCodeHighlight` : Render out formatting using a code block and options.
+* `preRenderer@cbCodeHighlight` : Process an HTML block and replace all `<pre></pre>` tags with the appropriate syntax highlight.
 
 ### Formatting Calls
 
-The `cbCodeFormat` model has a nice method to deal with converting code blocks to pretty ones:
+The `cbCodeHighlight` model has a nice method to deal with converting code blocks to pretty ones:
 
 ```js
 /**
@@ -58,11 +58,11 @@ Pass in a block of `code`, choose a language `syntax` and an optional `fileName`
 
 ### CSS
 
-This code formatter needs CSS to visualize the goodness.  You must make sure you add these css styles to your layout.  You can call the `getCssAssets()` on the `cbCodeFormat` object and it will give you a nice list of the css files to load.
+This code formatter needs CSS to visualize the goodness.  You must make sure you add these css styles to your layout.  You can call the `getCssAssets()` on the `cbCodeHighlight` object and it will give you a nice list of the css files to load.
 
 ```java
 function preHandler(){
-	addAsset( cbCodeFormat.getCssAssets() );
+	addAsset( cbCodeHighlight.getCssAssets() );
 }
 ```
 
@@ -75,12 +75,26 @@ We have provided an interceptor that listens to all ColdBox `preRender` intercep
 
 ### HTML Transformer
 
-You can also do a-la-carte transformations by accessing the `preRenderer@cbCodeFormat` model and calling it's `process( content )` method.  You can transform ANY string content by inspecting it for `<pre></pre>` tags and replacing them inline.
+You can also do a-la-carte transformations by accessing the `preRenderer@cbCodeHighlight` model and calling it's `process( content )` method.  You can transform ANY string content by inspecting it for `<pre></pre>` tags and replacing them inline.
 
 ```java
 var content = contentService.getContent( rc.id );
-return getInstance( "preRenderer@cbCodeFormat" ).process( content.render() );
+return getInstance( "preRenderer@cbCodeHighlight" ).process( content.render() );
 ```
+
+The `<pre>` tags also can have two more atrributes :
+
+* `syntax` : A valid pygments syntax definition: http://pygments.org/languages/
+* `fileName` : A filename that the pre code represents. This will output a nice filename information box.
+
+```html
+<pre syntax="javascript" fileName="component.js">
+
+<pre syntax="sql" fileName="export.sql">
+
+<pre syntax="coldfusion" fileName="myFile.cfm">
+```
+
 
 ********************************************************************************
 Copyright Since 2005 ColdBox Framework by Luis Majano and Ortus Solutions, Corp
