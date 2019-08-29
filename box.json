@@ -1,6 +1,6 @@
 {
     "name":"cbCodeHighlight",
-    "version":"1.0.0",
+    "version":"1.1.0",
     "location":"https://downloads.ortussolutions.com/ortussolutions/coldbox-modules/cbCodeHighlight/@build.version@/cbCodeHighlight-@build.version@.zip",
     "author":"Ortus Solutions, Corp",
     "homepage":"https://github.com/ortus-solutions/cbCodeHighlight",
