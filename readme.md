@@ -82,6 +82,20 @@ var content = contentService.getContent( rc.id );
 return getInstance( "preRenderer@cbCodeHighlight" ).process( content.render() );
 ```
 
+The `<pre>` tags also can have two more atrributes :
+
+* `syntax` : A valid pygments syntax definition: http://pygments.org/languages/
+* `fileName` : A filename that the pre code represents. This will output a nice filename information box.
+
+```html
+<pre syntax="javascript" fileName="component.js">
+
+<pre syntax="sql" fileName="export.sql">
+
+<pre syntax="coldfusion" fileName="myFile.cfm">
+```
+
+
 ********************************************************************************
 Copyright Since 2005 ColdBox Framework by Luis Majano and Ortus Solutions, Corp
 www.ortussolutions.com
